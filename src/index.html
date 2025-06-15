@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Story SPA</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-q6Ai9dS3EVv7U3opI4mUnWx8vDtkRTM9BIVkoN+3LJfswNsFekyHt7U9f7RZbmXI"
+      crossorigin="anonymous"
+    />
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      crossorigin=""
+    />
+
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/download.jpg" />
+    <meta name="theme-color" content="#5A338C" />
+  </head>
+  <body>
+    <header role="banner" class="bg-white border-bottom shadow-sm py-3">
+      <a href="#main-content" class="skip-to-content visually-hidden-focusable">
+        Lewati ke Konten Utama
+      </a>
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <h1 class="h4 mb-2 mb-md-0 text-dark m-0">STORY SPA</h1>
+        <nav id="main-nav" aria-label="Navigasi utama" class="nav gap-3">
+          <!-- Elemen nav akan dirender dinamis, tapi style tetap tampil -->
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1" role="main" class="container mb-5">
+      <div id="app"></div>
+    </main>
+    <div style="text-align: center; margin-top: 2rem">
+      <button id="installBtn" hidden>Install Aplikasi</button>
+    </div>
+    <footer role="contentinfo" class="bg-light text-center py-3">
+      <p class="mb-0">&copy; 2025 Story App</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+
+    <!-- Bootstrap Bundle JS (dengan Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-cX8L4o3x7oL4GE/j+Djdp2ZrN0ViMbT3wQZygwX+h3IOiV/7+Nk25X9iKT8kP7F4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
